@@ -1,0 +1,146 @@
+@media(max-width:850px) {
+    .container {
+        width: min(calc(100% - 32px), var(--container))
+    }
+
+    .nav {
+        min-height: 72px
+    }
+
+    .brand img {
+        width: 135px
+    }
+
+    .menu {
+        display: block
+    }
+
+    .nav nav {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 16px 18px;
+        background: #fffffff7;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 15px 30px #00000012;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: .2s
+    }
+
+    .nav nav.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: none
+    }
+
+    .nav nav>a {
+        padding: 13px 8px
+    }
+
+    .nav-cta {
+        text-align: center;
+        margin-top: 8px
+    }
+
+    .hero {
+        min-height: auto
+    }
+
+    .hero-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 75px 0 90px
+    }
+
+    .hero-card {
+        flex-basis: auto;
+        width: min(390px, 100%);
+        align-self: center
+    }
+
+    .split {
+        flex-direction: column;
+        gap: 55px
+    }
+
+    .visual,
+    .copy {
+        width: 100%
+    }
+
+    .heading,
+    .final-inner {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .footer {
+        flex-direction: column
+    }
+
+    .footer nav {
+        flex-direction: column;
+        gap: 12px
+    }
+}
+
+@media(max-width:560px) {
+    .section {
+        padding: 78px 0
+    }
+
+    .hero h1 {
+        font-size: clamp(2.8rem, 15vw, 4.2rem)
+    }
+
+    .actions {
+        flex-direction: column
+    }
+
+    .btn {
+        width: 100%
+    }
+
+    .hero-card {
+        height: 360px
+    }
+
+    .mark {
+        height: 215px
+    }
+
+    .mark b {
+        left: 68px;
+        top: 62px;
+        width: 82px;
+        height: 70px
+    }
+
+    .mark em {
+        left: 78px;
+        top: 4px;
+        border-left-width: 46px;
+        border-right-width: 46px;
+        border-bottom-width: 125px
+    }
+
+    .visual {
+        min-height: 350px
+    }
+
+    .categories article {
+        min-width: 100%
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 8px
+    }
+}
